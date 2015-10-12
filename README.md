@@ -1,6 +1,6 @@
 # Transbank::Oneclick
 
-Ruby Implementation of Transbank Oneclick API SOAP
+Ruby Implementation of Transbank Oneclick API SOAP (Now with support for validation)
 
 ## Installation
 
@@ -136,8 +136,11 @@ Transbank::Oneclick.configure do |config|
   config.url       = "ONECLICK_SOAP_URL"
   config.cert_path = "RELATIVE_PATH_TO_CRT_FILE"
   config.key_path  = "RELATIVE_PATH_TO_KEY_FILE"
+  config.validation_script  = "XML_VALIDATION_SCRIPT"
 end
 ```
+
+The validation script is optional. It executes a script that recieves on stdin the xml response string and should return "valid" if the response is valid and "invalid" if it isn't.
 
 ## Contributing
 

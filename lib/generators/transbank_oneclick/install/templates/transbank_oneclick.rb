@@ -1,8 +1,9 @@
 Transbank::Oneclick.configure do |config|
 
-  # config.url       = "ONECLICK_SOAP_URL"
-  # config.cert_path = "RELATIVE_PATH_TO_CRT_FILE"
-  # config.key_path  = "RELATIVE_PATH_TO_KEY_FILE"
+  # config.url                = "ONECLICK_SOAP_URL"
+  # config.cert_path          = "RELATIVE_PATH_TO_CRT_FILE"
+  # config.key_path           = "RELATIVE_PATH_TO_KEY_FILE"
+  # config.validation_script  = "XML_VALIDATION_SCRIPT"
 
   # These are the default options for Net::HTTP
   # it is also possible to pass them on every request
